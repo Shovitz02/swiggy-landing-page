@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy - Order Food & Groceries</title>
+  <meta name="description" content="Order food, discover restaurants and shop everyday groceries with Swiggy.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">
+        <span class="brand-mark">S</span>
+        <span>swiggy</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#services">Swiggy Corporate</a>
+        <a href="#footer">Partner with us</a>
+        <a class="app-button" href="#app">Get the App ↗</a>
+        <a class="signin-button" href="#signin">Sign In</a>
+      </div>
+
+      <a class="mobile-signin" href="#signin">Sign In</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <img class="hero-food"
+        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=620&q=85"
+        alt="Pizza">
+
+      <img class="hero-grocery"
+        src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=620&q=85"
+        alt="Fresh groceries">
+
+      <div class="hero-content">
+        <p class="eyebrow">GOOD FOOD. GOOD MOOD.</p>
+
+        <h1>
+          Order food &amp; groceries.<br>
+          Discover best restaurants.<br>
+          <span>Swiggy it!</span>
+        </h1>
+
+        <form class="search-row" id="food-search">
+          <label class="search-box location-box">
+            <span class="search-icon" aria-hidden="true">⌖</span>
+            <input type="text"
+              placeholder="Enter your delivery location"
+              aria-label="Delivery location"
+              list="delivery-locations"
+              autocomplete="address-level2">
+            <datalist id="delivery-locations">
+              <option value="Bengaluru"></option>
+              <option value="Mumbai"></option>
+              <option value="Delhi"></option>
+              <option value="Hyderabad"></option>
+              <option value="Pune"></option>
+              <option value="Chennai"></option>
+            </datalist>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </label>
+
+          <label class="search-box restaurant-box">
+            <input type="search"
+              placeholder="Search for restaurant, item or more"
+              aria-label="Search restaurants and food">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+          </label>
+          <button class="search-submit" type="submit" aria-label="Search food">→</button>
+        </form>
+
+        <div class="hero-tags">
+          <a href="#food">🍔 Food delivery</a>
+          <a href="#instamart">🥬 Groceries</a>
+          <a href="#dineout">🍽️ Dineout</a>
+        </div>
+      </div>
+
+      <div class="hero-spark spark-one">✦</div>
+      <div class="hero-spark spark-two">✦</div>
+    </section>
+
+    <!-- Three Main Services -->
+    <section class="services section container" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow orange">ONE APP, MANY EXPERIENCES</p>
+          <h2>What are you in the mood for?</h2>
+        </div>
+        <span class="heading-note">Explore Swiggy</span>
+      </div>
+
+      <div class="service-grid">
+
+        <a class="service-card food-card" href="#food">
+          <div class="service-copy">
+            <span class="card-kicker">QUICK &amp; DELICIOUS</span>
+            <h3>Food<br>Delivery</h3>
+            <p>From your favourites to new discoveries</p>
+            <span class="round-arrow">↗</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80"
+            alt="Food delivery pizza">
+          <span class="card-number">01</span>
+        </a>
+
+        <a class="service-card grocery-card" href="#instamart">
+          <div class="service-copy">
+            <span class="card-kicker">AT YOUR DOORSTEP</span>
+            <h3>Instamart</h3>
+            <p>Daily essentials, delivered in minutes</p>
+            <span class="round-arrow">↗</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80"
+            alt="Fresh groceries">
+          <span class="card-number">02</span>
+        </a>
+
+        <a class="service-card dineout-card" href="#dineout" id="dineout">
+          <div class="service-copy">
+            <span class="card-kicker">MAKE IT A NIGHT</span>
+            <h3>Dineout</h3>
+            <p>Great tables. Great food. Great deals.</p>
+            <span class="round-arrow">↗</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80"
+            alt="Restaurant dining">
+          <span class="card-number">03</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="category-section section container" id="food">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow orange">YOUR CRAVINGS, COVERED</p>
+          <h2>Order our best food options</h2>
+        </div>
+
+        <div class="slider-arrows">
+          <button type="button" aria-label="Previous categories" data-category-direction="-1">←</button>
+          <button type="button" aria-label="Next categories" data-category-direction="1">→</button>
+        </div>
+      </div>
+      <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
+
+      <div class="food-categories">
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=240&q=80" alt="Pizza">
+          <span>Pizza</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=240&q=80" alt="Burger">
+          <span>Burger</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=240&q=80" alt="Biryani">
+          <span>Biryani</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=240&q=80" alt="Cake">
+          <span>Cakes</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=240&q=80" alt="North Indian food">
+          <span>North Indian</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=240&q=80" alt="South Indian food">
+          <span>South Indian</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=240&q=80" alt="Snacks">
+          <span>Snacks</span>
+        </a>
+
+        <a class="food-category" href="#food">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=240&q=80" alt="Desserts">
+          <span>Desserts</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Instamart Banner and Categories -->
+    <section class="instamart-section section container" id="instamart">
+
+      <div class="instamart-banner">
+        <div>
+          <p class="eyebrow">YOUR EVERYDAY STORE</p>
+          <h2>Shop groceries<br>on <span>Instamart</span></h2>
+          <p class="banner-subtitle">
+            Fresh finds, everyday essentials — delivered fast.
+          </p>
+          <a href="#" class="white-button">
+            Explore Instamart <span>→</span>
+          </a>
+        </div>
+
+        <div class="grocery-art" aria-hidden="true">
+          <span class="fruit fruit-a">🥑</span>
+          <span class="fruit fruit-b">🍊</span>
+          <span class="fruit fruit-c">🥦</span>
+          <span class="fruit fruit-d">🍓</span>
+          <div class="paper-bag">fresh<br><b>daily</b></div>
+        </div>
+      </div>
+
+      <div class="section-heading grocery-heading">
+        <div>
+          <p class="eyebrow orange">FRESH PICKS, EVERY DAY</p>
+          <h2>Shop groceries on Instamart</h2>
+        </div>
+        <span class="heading-note">A little bit of everything</span>
+      </div>
+
+      <div class="grocery-grid">
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=260&q=80" alt="Fresh vegetables">
+          <span>Fresh Vegetables</span>
+        </a>
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=260&q=80" alt="Fresh fruits">
+          <span>Fresh Fruits</span>
+        </a>
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=260&q=80" alt="Dairy products">
+          <span>Dairy</span>
+        </a>
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1621939514649-280e2aa2f5a0?auto=format&fit=crop&w=260&q=80" alt="Munchies">
+          <span>Munchies</span>
+        </a>
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=260&q=80" alt="Cold drinks">
+          <span>Cold Drinks</span>
+        </a>
+
+        <a class="grocery-item" href="#instamart">
+          <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=260&q=80" alt="Personal care">
+          <span>Personal Care</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-promo" id="app">
+      <div class="container app-promo-inner">
+
+        <div>
+          <p class="eyebrow orange">GOOD THINGS COME TO YOUR PHONE</p>
+          <h2>Get the Swiggy app<br>for the full experience.</h2>
+          <p>Order, track, discover and enjoy — all in one place.</p>
+        </div>
+
+        <div class="app-badges">
+          <a href="#">
+            ▶
+            <span>
+              <small>GET IT ON</small>
+              <b>Google Play</b>
+            </span>
+          </a>
+
+          <a href="#">
+            ●
+            <span>
+              <small>Download on the</small>
+              <b>App Store</b>
+            </span>
+          </a>
+        </div>
+
+        <div class="phone-shape" aria-hidden="true">
+          <div class="phone-screen">
+            <span class="mini-logo">S</span>
+            <div class="mini-search"></div>
+            <div class="mini-food"></div>
+            <div class="mini-lines"></div>
+            <div class="mini-lines short"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a class="brand footer-logo" href="#">
+            <span class="brand-mark">S</span>
+            <span>swiggy</span>
+          </a>
+          <p>© 2026 Swiggy Limited</p>
+          <p class="footer-tagline">
+            Bringing good food and convenience<br>
+            closer to you.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Swiggy Corporate</a>
+          <a href="#">Careers</a>
+          <a href="#">Team</a>
+          <a href="#">Swiggy One</a>
+          <a href="#">Instamart</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact us</h4>
+          <a href="#">Help &amp; Support</a>
+          <a href="#">Partner with us</a>
+          <a href="#">Ride with us</a>
+
+          <h4 class="footer-subhead">Legal</h4>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Available in</h4>
+          <a href="#">Bangalore</a>
+          <a href="#">Gurgaon</a>
+          <a href="#">Hyderabad</a>
+          <a href="#">Delhi</a>
+          <a href="#">Mumbai</a>
+          <a href="#">Pune</a>
+          <a href="#" class="city-more">685 cities <span>⌄</span></a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Life at Swiggy</h4>
+          <a href="#">Explore with Swiggy</a>
+          <a href="#">News &amp; Updates</a>
+
+          <h4 class="footer-subhead">Social Links</h4>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>For better experience, download the Swiggy app now.</span>
+
+        <div class="app-badges small-badges">
+          <a href="#">
+            ▶
+            <span>
+              <small>GET IT ON</small>
+              <b>Google Play</b>
+            </span>
+          </a>
+
+          <a href="#">
+            ●
+            <span>
+              <small>Download on the</small>
+              <b>App Store</b>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="city-links">
+        <h4>Popular food delivery cities</h4>
+        <p>
+          Bangalore · Mumbai · Delhi · Hyderabad · Pune · Chennai · Kolkata ·
+          Jaipur · Lucknow · Meerut · Noida · Ahmedabad · Chandigarh · Indore
+        </p>
+
+        <h4>Popular grocery delivery cities</h4>
+        <p>
+          Bangalore · Mumbai · Delhi · Hyderabad · Pune · Chennai · Kolkata ·
+          Jaipur · Lucknow · Ahmedabad
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
